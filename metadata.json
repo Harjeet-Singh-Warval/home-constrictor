@@ -1,0 +1,6 @@
+{
+  "name": "Warval - Modular Tiny Homes",
+  "description": "Architectural precision meets modern living. Factory-built modular homes designed for speed, sustainability, and customization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
