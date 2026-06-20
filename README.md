@@ -1,20 +1,77 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
+<img width="1200" alt="Pody Banner" src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1200&h=475&fit=crop" />
 </div>
 
-# Run and deploy your AI Studio app
+# Pody — Specialized Modular & Tiny Homes
 
-This contains everything you need to run your app locally.
+An AI-powered marketing and design-quoting website for **Warval Cabin Systems LLC**, showcasing modular tiny home models with an intelligent customization engine.
 
-View your app in AI Studio: https://ai.studio/apps/9295db73-0187-41a3-89bf-454585a6816f
+## Features
 
-## Run Locally
+- **Hero Carousel** — Full-screen slideshow with animated transitions
+- **Model Gallery** — Interactive bento-grid showcasing 3 models (Cedar Lane, Pine Ridge, Willow Creek)
+- **Structural Anatomy** — Toggleable floorplans with detailed spec sheets per model
+- **Services Accordion** — Expandable service descriptions
+- **AI Customizer** — Gemini-powered quote generator that produces architectural specs and cost breakdowns based on user preferences
+- **Testimonials** — Carousel with client reviews
+- **Newsletter** — Email signup form
+- **Responsive** — Mobile-friendly with hamburger menu
 
-**Prerequisites:**  Node.js
+## Tech Stack
 
+| Layer | Technology |
+|---|---|
+| Framework | [Next.js](https://nextjs.org/) 15 (App Router) |
+| Language | TypeScript 5 (strict) |
+| UI | React 19, Tailwind CSS v4, Motion |
+| AI | Google Gemini (`@google/genai`) |
+| Icons | Lucide React |
+| Fonts | Montserrat + Geist |
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Getting Started
+
+**Prerequisites:** Node.js
+
+```bash
+# Install dependencies
+npm install
+
+# Set your Gemini API key (optional — falls back to mock data)
+# Copy .env.example to .env.local and add GEMINI_API_KEY
+
+# Run development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Start dev server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run clean` | Clean Next.js cache |
+
+## Environment Variables
+
+| Variable | Description |
+|---|---|
+| `GEMINI_API_KEY` | Google Gemini API key |
+| `APP_URL` | Hosted app URL |
+| `DISABLE_HMR` | Set to `"true"` to disable HMR |
+
+## Project Structure
+
+```
+app/          — Next.js App Router (pages, API routes)
+hooks/        — Custom React hooks
+lib/          — Utility functions
+src/assets/   — Static images
+```
+
+## License
+
+MIT

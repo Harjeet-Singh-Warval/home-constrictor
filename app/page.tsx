@@ -266,7 +266,6 @@ export default function Home() {
           {/* Logo */}
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
             <span className="font-display text-2xl font-bold tracking-[0.18em] text-[#1a1c1b]">WARVAL</span>
-            <span className="h-1.5 w-1.5 bg-brand-wood rounded-full self-end mb-2.5"></span>
           </div>
 
           {/* Desktop Nav */}
@@ -457,20 +456,20 @@ export default function Home() {
               {/* Technical stat counter row */}
               <div className="pt-6 border-t border-[#dadad8] grid grid-cols-3 gap-6 font-mono text-center md:text-left">
                 <div>
-                  <h4 className="text-3xl font-bold text-[#1a1c1b]">08<span className="text-brand-wood text-xl">wks</span></h4>
-                  <p className="text-[10px] text-[#1a1c1b]/60 uppercase tracking-widest mt-1">Average Build Time</p>
+                  <h4 className="text-3xl font-bold text-[#1a1c1b]">8–12<span className="text-brand-wood text-xl">wks</span></h4>
+                  <p className="text-[10px] text-[#1a1c1b]/60 uppercase tracking-widest mt-1">Factory Build Window</p>
                 </div>
                 <div>
-                  <h4 className="text-3xl font-bold text-[#1a1c1b]">100%</h4>
-                  <p className="text-[10px] text-[#1a1c1b]/60 uppercase tracking-widest mt-1">Off-Grid Capable</p>
+                  <h4 className="text-3xl font-bold text-[#1a1c1b]">Up to</h4>
+                  <p className="text-[10px] text-[#1a1c1b]/60 uppercase tracking-widest mt-1">Off-Grid Configurable</p>
                 </div>
                 <div>
-                  <h4 className="text-3xl font-bold text-[#1a1c1b]">R-38</h4>
-                  <p className="text-[10px] text-[#1a1c1b]/60 uppercase tracking-widest mt-1">Thermal Retention</p>
+                  <h4 className="text-3xl font-bold text-[#1a1c1b]">R-30+</h4>
+                  <p className="text-[10px] text-[#1a1c1b]/60 uppercase tracking-widest mt-1">Envelope Insulation</p>
                 </div>
               </div>
               <p className="text-[9px] text-[#1a1c1b]/40 italic leading-relaxed pt-3 block md:text-left text-center">
-                * Average factory prefabrication window; off-grid and thermal performance variables base-certified per regional specifications.
+                * Typical factory prefabrication range; off-grid readiness and thermal performance vary by configuration and site conditions.
               </p>
             </div>
 
@@ -610,7 +609,7 @@ export default function Home() {
             <div className="space-y-4">
               <span className="font-mono text-xs font-bold tracking-[0.2em] text-brand-forest uppercase">What we create</span>
               <h2 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-[#1a1c1b]">
-                Designed to Adapt —<br className="hidden md:inline" /> Inside and Out.
+                Explore Our<br className="hidden md:inline" /> Signature Models
               </h2>
             </div>
             
@@ -896,12 +895,11 @@ export default function Home() {
               {/* Center layout content wrapper displaying the technical schematic model blueprint image */}
               <div className="w-full max-w-3xl text-center z-10 px-4 md:px-12 py-8 bg-white rounded-sm border border-[#dadad8]/60 relative aspect-[1.4] md:aspect-[1.6] h-[300px] md:h-[450px]">
                 <Image 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiQcLvk59OmmD4L7QrQEYzVrdbRx8uhE_0nmNUybrezqlZjsngbCaWlEQ_ALQFaHLh9YNyckgyZuUX56qckm8Idtf4M7N_FxKZmlUDASFmOinIT4G2nSbWCXCFo8it4KOp24TG3j6gLZSiWbNv4ELN1g-S2LBLMiu40P7IARp9pIIGVXoidzN4-NszMGVDOSH1Ha3BiK7m9eJn-NkMBuS1lCgONcWWE8vvcDGIAF8wjoBfwoa-lbXvdhp41lzzinbB1Zg-SgJ"
+                  src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1000&q=80"
                   alt={`Technical blueprint schematic for ${MODEL_DETAILS[activeModel].name}`}
                   fill
                   className="object-contain p-4 md:p-8"
                   referrerPolicy="no-referrer"
-                  unoptimized
                 />
               </div>
             </div>
@@ -1088,7 +1086,6 @@ export default function Home() {
           <div className="md:col-span-4 space-y-6">
             <div className="flex items-center space-x-2">
               <span className="font-display text-2xl font-bold tracking-[0.18em] text-white">WARVAL</span>
-              <span className="h-1.5 w-1.5 bg-brand-wood rounded-full self-end mb-2.5"></span>
             </div>
             
             <p className="text-white/60 font-light text-xs leading-relaxed max-w-sm">
